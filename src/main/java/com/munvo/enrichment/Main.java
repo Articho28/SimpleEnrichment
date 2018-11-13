@@ -23,8 +23,8 @@ public class Main {
     
     public static void main(String[] args) {
         // Get an instance of Configuration using Singleton pattern
-        Configuration configuration = null;
-
+        Configuration configuration = Configuration.getInstance(); 
+        
         // Instantiate an input stream converter
         FileReaderParser fileReaderParser = null;
 
