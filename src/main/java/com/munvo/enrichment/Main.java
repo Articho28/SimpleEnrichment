@@ -23,10 +23,11 @@ public class Main {
     ));
     
     public static void main(String[] args) {
+    	
         // Get an instance of Configuration using Singleton pattern
         Configuration configuration = Configuration.getInstance(); 
        
-        
+        //Create a parser factory to obtain proper FileReaderParser type.
         FileReaderParserFactory parserFactory= new FileReaderParserFactory();
           
         // Instantiate an input stream converter
