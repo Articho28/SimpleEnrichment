@@ -2,6 +2,12 @@ package com.munvo.enrichment.parser;
 
 import com.munvo.enrichment.model.Subscriber;
 
+/**
+ * Class that parses subscriber.csv file and returns Subscriber object.
+ * @author Artsiom Skliar (Github: Articho28)
+ *
+ */
+
 public class CSVReaderParser implements FileReaderParser{
 	
 	@Override
