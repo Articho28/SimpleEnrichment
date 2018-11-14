@@ -3,6 +3,16 @@ package com.munvo.enrichment.configuration;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 
+/**
+ * This Configuration class loads information from a .conf file and returns a 
+ * configuration object.
+ * 
+ * @author david-parr
+ * modified by: Artsiom Skliar (Github: Articho28)
+ * 
+ *Implementation: Singleton. 
+ */
+
 public class Configuration {
 
     private String studentName;
@@ -44,6 +54,7 @@ public class Configuration {
     
     @Override
     public String toString() { 
-		return "{\"studentName\":" + studentName + ", \"type\": " + type + ", \"fileName\":" + fileName + "}";
+		return "{\"studentName\": \"" + studentName + "\", \"type\": \"" + type 
+				+ "\" , \"fileName\": \"" + fileName + "\"}";
     }
 }
